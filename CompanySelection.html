@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experience</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .container {
+        height: 100vh; /* Set container height to 100% of viewport height */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden; /* Hide any overflowing content (e.g., if images are too large) */
+      }
+
+      .top-half,
+      .bottom-half {
+        height: 50%; /* Each half will occupy 50% of the container's height */
+        position: relative; /* Make the container relatively positioned */
+        background-position: center; /* Center the background images */
+        background-size: cover; /* Scale images to cover the entire containers */
+      }
+
+      .top-half {
+        background-image: url("Documents/TS.jpeg"); /* Set the first image as the background */
+      }
+
+      .bottom-half {
+        background-image: url("Documents/NCRimage.jpg"); /* Set the second image as the background */
+      }
+
+      .heading {
+        position: absolute; /* Position the heading absolutely inside the container */
+        top: 50%; /* Vertically center the heading */
+        left: 50%; /* Horizontally center the heading */
+        transform: translate(
+          -50%,
+          -50%
+        ); /* Center the heading exactly in the middle */
+        color: white; /* Set the heading text color to white */
+        font-family: "Poppins", sans-serif; /* Set the font family to Poppins */
+        font-size: 45px; /* Increase the font size to make the text look good */
+        font-weight: bold; /* Set the font weight */
+        text-align: center; /* Center the heading text */
+      }
+
+      .heading a {
+        text-decoration: none; /* Remove underline from the link */
+        color: white; /* Set the link color to white */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-half">
+        <div class="heading">
+          <a href="WorkTermReportTulip.html">TULIP RETAIL</a>
+        </div>
+      </div>
+      <div class="bottom-half">
+        <div class="heading"><a href="#">NCR</a></div>
+      </div>
+    </div>
+  </body>
+</html>
